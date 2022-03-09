@@ -3,46 +3,48 @@
 
 
 .smimg{
-width: 200px;
-height: 200px;
+width: 130px;
+height: 130px;
 border-radius: 20px;
-margin: 5px 0px;
+margin: 2px 0px;
 &:hover{
     border: 2px solid blue;
     border-radius: 10px;
 }
 }
 
-@media only screen and (max-width: 1200px){
-    .smimg{
-        width: 150px;
-        height: 150px;
-        border-radius: 20px;
-        margin: 2px 0px;
-        }  
-}
 
-@media only screen and (max-width: 990px){
-    .smimg{
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-        margin: 1px 0px;
-        }  
-}
-@media only screen and (max-width: 480px){
+
+@media only screen and (max-width: @screen-md-max){
     .smimg{
         width: 80px;
         height: 80px;
         border-radius: 20px;
-        margin: 1px 0px;
+        margin: 0px 0px;
         }  
+        .d-md-none{
+            display: none;
+        }
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: @screen-sm-max){
     .smimg{
-        width: 50px;
-        height: 50px;
-        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
         margin: 1px 0px;
         }  
+        .d-sm-none{
+            display: none;
+        }
+}
+@media only screen and (max-width: @screen-xs-max){
+    .smimg{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin: 0px 0px;
+        }  
+        .d-xs-none{
+            display: none;
+        }
 }
